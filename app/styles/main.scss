@@ -1,0 +1,54 @@
+/*******Common*******/
+@import "common";
+
+
+/********Settings**********/
+@import "animation";
+@import "captions";
+@import "custom-breadcrumb";
+
+/*******Components********/
+@import "components/fixes";
+@import "components/header";
+@import "components/body";
+@import "components/statistic";
+@import "components/services";
+@import "components/userInfo";
+@import "components/footer";
+@import "components/carousel";
+@import "components/typography";
+@import "components/amana-ads";
+@import "components/amana-ads-voting";
+@import "components/gallery";
+@import "components/apps";
+@import "components/votes";
+@import "components/fixed-controls";
+@import "components/btn";
+// @import "components/sideItems";
+@import "components/ie-fix";
+@import "components/sections";
+@import "components/custom-slice";
+@import "components/side-tabs";
+@import "components/logo";
+
+/***Pages****/
+@import "components/inner/login";
+@import "components/inner/error";
+@import "components/inner/services";
+
+
+body{
+  font-family: 'dinnRegular',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none; 
+}
+  a:hover {
+    text-decoration: none;
+}
+
+a.btn:hover {
+    color: #fff; 
+}
