@@ -1,0 +1,16 @@
+<svg id="more-services.svg" xmlns="http://www.w3.org/2000/svg" width="27.5" height="27.5" viewBox="0 0 27.5 27.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff9940;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <ellipse id="Ellipse_656_copy_4" data-name="Ellipse 656 copy 4" class="cls-1" cx="13.75" cy="13.75" rx="13.75" ry="13.75"/>
+  <path id="Shape_628_copy_4" data-name="Shape 628 copy 4" class="cls-2" d="M581.413,316.347h-8.555l3.953,3.793h-2.8l-4.942-4.74,4.942-4.742h2.8l-3.953,3.793h8.555v1.9Z" transform="translate(-561.5 -301.188)"/>
+</svg>

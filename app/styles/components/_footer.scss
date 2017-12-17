@@ -1,0 +1,48 @@
+/****
+ footer
+****/
+.footer{
+  // background: url(../images/footer-bg.png) no-repeat bottom;
+ 
+  position: relative;
+  background-position: 0 2px;
+  margin-top: 40px;
+  width: 100%;
+  background-size: cover;
+
+  &-content{
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    color: #fff;
+  }
+  
+  &-links{
+    a{
+      color: #fff;
+      border-left: 1px solid #fff;
+      padding-left: 10px;
+      margin-left: 10px;
+      &:first-child{
+        border-left: 0;
+        padding-left: 0;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 659px) {
+  footer{
+    background: url(../images/footerMob-bg.png) no-repeat bottom !important;
+    height: 367px;
+  }
+}
+
+@media screen and (min-width: 659px) {
+  footer{
+    background: url(../images/footer-bg.png) no-repeat bottom;
+    height: 337px;
+  }
+}

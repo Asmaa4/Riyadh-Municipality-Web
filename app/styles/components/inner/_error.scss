@@ -1,0 +1,53 @@
+.error{
+	&-container{
+		padding-bottom: 70px;
+		text-align: center;
+	}
+
+	&-wrapper{
+		height: 100%; 
+		width: 100%; 
+	}
+
+	&-number{
+		font-size: 170px;
+		font-weight: bold;
+	}
+	&-message{
+		line-height: 2.2;
+		&--title{
+			font-size: 18px;
+			font-weight: bold;
+		}
+		&--summary{
+			color:#777777;
+			font-size: 15px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		&--link{
+			font-size: 20px;
+			font-weight: bold;
+			color: #67aed9;
+			display: block;
+			margin-bottom: 10px;
+
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) { 
+	.error{
+		&-container{
+			width: 570px;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) { 
+	.error{
+		&-number{
+			font-size: 100px;
+		}
+	}
+}

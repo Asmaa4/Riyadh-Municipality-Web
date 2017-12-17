@@ -1,0 +1,36 @@
+<svg id="tech-support.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="99" height="99" viewBox="0 0 99 99">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+        filter: url(#filter-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="13.306" x2="78.694" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff975f"/>
+      <stop offset="1" stop-color="#ff4163"/>
+    </linearGradient>
+    <filter id="filter" x="0" y="0" width="99" height="99" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="2.723" dy="4.193" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2.236"/>
+      <feFlood result="flood" flood-opacity="0.12"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="355" y="1948.19" width="68" height="51.81" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="2.723" dy="4.193" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2.236"/>
+      <feFlood result="flood" flood-opacity="0.12"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <circle id="Ellipse_679_copy_5" data-name="Ellipse 679 copy 5" class="cls-1" cx="46" cy="45" r="45"/>
+  <path id="services_icon5.png_copy" data-name="services_icon5.png copy" class="cls-2" d="M395.088,1981.27h-3.909a3.049,3.049,0,0,1-2.749,1.76,3.04,3.04,0,1,1,0-6.08,3.169,3.169,0,0,1,2.627,1.46H395.7a10.859,10.859,0,0,1,6.841-6.99,17.383,17.383,0,1,0-17.407,17.82,17.528,17.528,0,0,0,10.689-3.59,10.644,10.644,0,0,1-.794-3.95A1.231,1.231,0,0,0,395.088,1981.27Zm-9.956-29.25a20.362,20.362,0,0,1,20.034,16.54,5.917,5.917,0,0,0-1.71,2.49,11.548,11.548,0,0,1,2.565-.3,10.773,10.773,0,0,1,8,3.53v-1.58a5.375,5.375,0,0,0-5.13-5.36,24.239,24.239,0,0,0-47.4,0,5.335,5.335,0,0,0-5.131,5.36v3.4a5.437,5.437,0,0,0,10.873,0v-3.4a5.463,5.463,0,0,0-1.955-4.14A20.118,20.118,0,0,1,385.132,1952.02Zm20.828,20.43a9,9,0,1,0,9.04,9A9,9,0,0,0,405.96,1972.45Zm-1.23,7.78h2.94v7.28h-2.94v-7.28Zm1.47-4.35a1.47,1.47,0,1,1-1.47,1.47A1.471,1.471,0,0,1,406.2,1975.88Z" transform="translate(-339 -1924)"/>
+</svg>

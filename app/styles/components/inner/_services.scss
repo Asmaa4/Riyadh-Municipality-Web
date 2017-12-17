@@ -1,0 +1,129 @@
+.services{
+	&-title{
+		
+		border-bottom: 2px solid #1ec4fa;
+		font-weight: bold;
+		font-size: 30px;
+    	padding-bottom: 10px;
+    	margin-bottom: 30px;
+    	display: inline-block;
+	}
+
+	&-block{
+		&-icon{
+			&-container{
+				padding: 40px;
+			    margin: 0 auto;
+			    text-align: center;
+			    color: #fff;
+			    height: 100%;
+			}
+		}
+	}
+
+	&-item{
+		box-shadow: 0px 5px 9px 0px #ccc;
+		position: relative;
+		height: 100%;
+		margin-bottom: 30px;
+		
+		&-icon{
+			padding: 80px 60px;
+			color:#fff;
+			display: table;
+			height: 100%;
+			width: 100%;
+
+			&-blue{
+				background: #3dd4ff url("../../images/dottedBlue-bg.png");
+				background-image: url("../../images/dottedBlue-bg.png"), -webkit-linear-gradient(left, #027ce3,#3dd4ff);
+				background-image: url("../../images/dottedBlue-bg.png"), -o-linear-gradient(right,  #027ce3,#3dd4ff);
+				background-image:url("../../images/dottedBlue-bg.png"), -moz-linear-gradient(right, #027ce3,#3dd4ff); 
+				background-image: url("../../images/dottedBlue-bg.png"), linear-gradient(to right, #027ce3,#3dd4ff); 
+				background-repeat: no-repeat;
+				background-position: left bottom;
+			}
+
+			&-green{
+				background: #3eee5f url("../../images/dottedGreen-bg.png");
+				background-image: url("../../images/dottedGreen-bg.png"), -webkit-linear-gradient(left, #3eee5f,#00bb54);
+				background-image: url("../../images/dottedGreen-bg.png"), -o-linear-gradient(right,  #3eee5f,#00bb54);
+				background-image:url("../../images/dottedGreen-bg.png"), -moz-linear-gradient(right, #3eee5f,#00bb54); 
+				background-image: url("../../images/dottedGreen-bg.png"), linear-gradient(to right, #3eee5f,#00bb54); 
+				background-repeat: no-repeat;
+				background-position: left bottom;
+			}
+			&-red{
+				background: #ff613c url("../../images/dottedRed-bg.png");
+				background-image: url("../../images/dottedRed-bg.png"), -webkit-linear-gradient(left, #ff613c,#ff4163);
+				background-image: url("../../images/dottedRed-bg.png"), -o-linear-gradient(right,  #ff613c,#ff4163);
+				background-image:url("../../images/dottedRed-bg.png"), -moz-linear-gradient(right, #ff613c,#ff4163); 
+				background-image: url("../../images/dottedRed-bg.png"), linear-gradient(to right, #ff613c,#ff4163); 
+				background-repeat: no-repeat;
+				background-position: left bottom;
+			}
+			&-gray{
+				background: #cdcdcd url("../../images/dottedGray-bg.png");
+				background-image: url("../../images/dottedGray-bg.png"), -webkit-linear-gradient(left, #cdcdcd,#9e9e9e);
+				background-image: url("../../images/dottedGray-bg.png"), -o-linear-gradient(right,  #cdcdcd,#9e9e9e);
+				background-image:url("../../images/dottedGray-bg.png"), -moz-linear-gradient(right, #cdcdcd,#9e9e9e); 
+				background-image: url("../../images/dottedGray-bg.png"), linear-gradient(to right, #cdcdcd,#9e9e9e); 
+				background-repeat: no-repeat;
+				background-position: left bottom;
+			}
+			
+			&-container{
+				margin:  0 auto;
+			    text-align: center;
+			    display: table-cell;
+			    vertical-align: middle;
+			}
+			&-img{
+				padding-bottom: 20px;
+			}
+		}
+		&-list{
+			background-color: #fff;
+			padding: 20px 30px;
+			height: 100%;
+
+			ul {
+				list-style: none;
+				padding-left: 0px;
+				font-size: 15px;
+
+					li:before{
+					    color: #b7b7b7;
+					    content: '•';
+					    padding-right: 8px;
+					    font-size: 30px;
+					    vertical-align: sub;
+					}
+				}
+			}
+		}
+}
+
+
+@media screen and (max-width: 767px) {
+	.services{
+		&-item{
+			height: auto;
+
+			&-icon{
+				height: auto;
+				padding: 40px;
+				&-img{
+					display: inline-block;
+				}
+				&-text{
+					display: inline-block;
+					position: relative;
+				    top: 14px;
+				    left: 20px;
+				}
+			}
+		}
+	}
+}
+

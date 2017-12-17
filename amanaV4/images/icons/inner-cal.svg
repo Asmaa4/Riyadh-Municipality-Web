@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13.62" height="14.344" viewBox="0 0 13.62 14.344">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="inner-cal.svg" class="cls-1" d="M1264.5,758.334h-10.59a1.482,1.482,0,0,1-1.52-1.435V746.863a1.48,1.48,0,0,1,1.52-1.434h0.75V744h1.52v1.434h6.05V744h1.52v1.434h0.75a1.48,1.48,0,0,1,1.52,1.434V756.9A1.482,1.482,0,0,1,1264.5,758.334Zm0-9.321h-10.59V756.9h10.59v-7.886Zm-5.29,5.018h-3.79v-3.583h3.79v3.583Z" transform="translate(-1252.41 -744)"/>
+</svg>

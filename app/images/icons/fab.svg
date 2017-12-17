@@ -1,0 +1,12 @@
+<svg id="fab.svg" xmlns="http://www.w3.org/2000/svg" width="8" height="30" viewBox="0 0 8 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <ellipse class="cls-1" cx="4" cy="25.797" rx="4" ry="4.203"/>
+  <circle id="Ellipse_7_copy" data-name="Ellipse 7 copy" class="cls-1" cx="4" cy="4.203" r="4"/>
+  <circle id="Ellipse_7_copy_2" data-name="Ellipse 7 copy 2" class="cls-1" cx="4" cy="14.75" r="4"/>
+</svg>

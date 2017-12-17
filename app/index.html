@@ -1,0 +1,872 @@
+<!doctype html>
+<html class="no-js" lang="" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name='viewport'  content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
+  
+  <title>Riyadh Municipality</title>
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+
+  <!-- build:css styles/bootstrap.css -->
+  <link rel="stylesheet" href="styles/bootstrap.css">
+  <!-- endbuild -->
+
+  <!-- build:css styles/slick.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
+  <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick-theme.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+
+  <script src="scripts/modernizr.js"></script>
+  
+</head>
+
+<body class="body-secondary">
+  <div class="side-tabs">
+    <div class="side-tabs-links">
+      <button class="side-tabs-link side-tabs-link-enabled" onclick="openSideTab($(this),event, 'support')">
+        <img src="images/icons/support-fixed.svg" alt="">
+      </button>
+      <button class="side-tabs-link side-tabs-link-enabled" onclick="openSideTab($(this),event, 'weather')">
+        <img src="images/icons/weather-fixed.svg" alt=""></a>
+      </button>
+      <button class="side-tabs-link side-tabs-link-enabled" onclick="openSideTab($(this),event, 'pray')">
+        <img src="images/icons/pray-fixed.svg" alt="">
+      </button>
+    </div>
+
+    <!--Technical Support-->
+    <div id="support" class="side-tabs-item side-tabs-support">
+      <div class="side-tabs-item-container">
+        <div class="text-center mb-4">
+          <h3><strong>الدعم الفني</strong></h3>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+            <div class="row">
+              <div class="col-md-5 col-sm-12">
+                <strong>رقم الاتصال :</strong>
+              </div>
+              <div class="col-md-6 col-sm-12 text-left p-0">
+                <span>01002554547</span>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <strong>البريد الالكتروني :</strong>
+              </div>
+              <div class="col-md-6 col-sm-12 p-0">
+                <span>mail@gov.sa.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <!--Technical Support cards-->
+        <div class="side-tabs-support-cards">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6 form-group">
+              <strong>بطاقالت الدعم الفني</strong>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6 form-group text-md-right support-cards-more">
+              <strong class="support-cards-more-text">عرض جميع البطاقات</strong>
+              <span class="support-cards-more-icon"></span>
+            </div>
+          </div>
+
+          <ul class="support-cards-items">
+            <li class="support-cards-item status-done">دورة ادارة البوابة الإلكترونية
+              <span>14 شوال 1435هـ</span>
+            </li>
+            <li class="support-cards-item status-delayed">دورة ادارة البوابة الإلكترونية
+              <span>14 شوال 1435هـ</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-center">
+          <a href="javascript:;" class="btn side-tabs-support-btn"> إرسال طلبك جديد</a>
+        </div>
+      </div>
+      
+    </div>
+
+    <div id="weather" class="side-tabs-item side-tabs-weather">
+      <div class="side-tabs-item-container">
+        <div class="weather-control text-center">
+          <div class=" mb-4">
+            <h3><strong>حالة الطقس</strong></h3>
+
+          </div>
+          <div class="form-group">
+            <select name="" id="" class="">
+             <option value="مدينة الرياض">مدينة الرياض</option>
+           </select>
+         </div>
+         <img src="images/weather.png" alt="">
+         <p>مشمس جزئيًا</p>
+         <p>
+          <span class="weather-min">°26</span>
+          <span class="weather-max">°28</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="pray" class="side-tabs-item side-tabs-pray">
+    <div class="side-tabs-item-container">
+      <div class="text-center pray-control">
+        <div class=" mb-4">
+          <h3><strong>مواقيت الصلاة</strong></h3>
+        </div>
+        <div class="form-group">
+          <select name="" id="" class="">
+            <option value="مدينة الرياض">مدينة الرياض</option>
+          </select>
+        </div>
+
+        <div class="pray-control-time row">
+          <div class="col-xs-12 col-sm-8 text-left">
+            <span>يتبقى على رفع أذان المغرب : </span>
+          </div>
+          <div class="col-sm-4 col-xs-12 text-left text-sm-right">
+            <h5 class="font-weight-bold">10:12</h5>
+          </div>
+        </div>
+
+        <table class="table pray-control-table">
+          <tbody>
+            <tr>
+              <td>الفجر</td>
+              <td>4:30</td>
+              <td>الظهر</td>
+              <td>4:30</td>
+            </tr>
+            <tr>
+              <td>الظهر</td>
+              <td>4:30</td>
+              <td>العصر</td>
+              <td>4:30</td>
+            </tr>
+            <tr>
+              <td>المغرب</td>
+              <td>4:30</td>
+              <td>العشاء</td>
+              <td>5:30</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="header">
+  <div class="container">
+    <div class="d-flex align-items-center">
+      <div class="dropdown">
+        <a href="javascript:;" id="mainMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="images/icons/burger.svg" alt="">
+        </a>
+        <div class="dropdown-menu dropdown-menu-right main-menu" aria-labelledby="mainMenu">
+          <a class="dropdown-item" href="javascript:;"><img src="images/icons/gate.svg" alt="" class="svg">البوابة
+
+          </a>
+          <a class="dropdown-item orange" href="javascript:;">
+            <img src="images/icons/services-menu.svg" alt="" class="svg">خدماتي
+            <span class="badge badge-primary float-right">20</span>
+          </a>
+          <a class="dropdown-item blue" href="javascript:;"><img src="images/icons/tasks-menu.svg" alt="" class="svg">مهامي
+            <span class="badge badge-primary float-right">20</span>
+          </a>
+          <a class="dropdown-item red" href="javascript:;"><img src="images/icons/alarm-menu.svg" alt="" class="svg">اشعاراتي
+            <span class="badge badge-primary float-right">20</span>
+          </a>
+          <a class="dropdown-item green" href="javascript:;"><img src="images/icons/requests-menu.svg" alt="" class="svg">طلباتي
+            <span class="badge badge-primary float-right">20</span>
+          </a>
+          <a class="dropdown-item" href="javascript:;"><img src="images/icons/link.svg" alt="" class="svg">صاحب الإجراء
+          </a>
+        </div>
+      </div>
+      <a href="javascript:;" class="logo mr-auto ml-md-4 logo-container">
+        <img src="images/logo.png" alt="" class="d-none d-md-block">
+        <img src="images/logo-icon.png" alt="" class="d-block d-md-none">
+      </a>
+      <div class="date-time d-sm-none d-none d-lg-block">
+        <div class="caption">
+          <div class="caption-media">
+            <img src="images/icons/calendar.png" alt="" class="mr-2">
+          </div>
+          <div class="caption-text">
+            <span class="text-white">
+              <span class="date-time-number">9:13</span>
+              <span class="date-time-text">
+                ص   -  <span class="date-time-number">20</span> جمادى الأولى 1435 هـ
+              </span> 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown ml-4  d-sm-none d-none d-md-block">
+        <a href="javascript:;" class="d-block header-notification" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="badge header-notification-badge">5</span>
+          <img src="images/icons/alarm.svg" alt="">
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="javascript:;">Action</a>
+          <a class="dropdown-item" href="javascript:;">Another action</a>
+          <a class="dropdown-item" href="javascript:;">Something else here</a>
+        </div>
+      </div>
+      <div class="dropdown ml-md-5">
+        <a href="javascript:;" class="dropdown-toggle text-white d-block" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
+        <img src="images/profile.jpg" class="rounded-circle" alt="">
+        <span class=" d-sm-none d-none d-md-inline-block">منصور عبدالقادر</span>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="javascript:;">Action</a>
+        <a class="dropdown-item" href="javascript:;">Another action</a>
+        <a class="dropdown-item" href="javascript:;">Something else here</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="body">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-8 d-flex flex-column">
+        <div class="row statistics">
+          <div class="col-md-4 col-6 form-group">
+            <a href="#orange" data-toggle="collapse" data-target="#orange">
+              <div class="statistic orange">
+                <div class="statistic-info">
+                  <h2>26</h2>
+                  <p>خدمة</p>
+                </div>
+                <h5 class="statistic-title">
+                  <img src="images/icons/services.svg" alt="" class="mr-2"> 
+                  خدماتي
+                </h5>
+              </div>
+            </a>
+            
+          </div>
+
+          <div class="col-md-4 col-6 form-group">
+            <a href="#blue" data-toggle="collapse" data-target="#blue">
+              <div class="statistic blue">
+                <div class="statistic-info">
+                  <h2>26</h2>
+                  <p>مهمة جديدة</p>
+                </div>
+                <h5 class="statistic-title">
+                  <img src="images/icons/tasks.svg" alt="" class="mr-2">
+                  مهامي
+                </h5>
+              </div>
+            </a>
+            
+          </div>
+
+          <div class="d-md-none col-6 form-group pinkDisplay">
+            <a href="#pink" data-toggle="collapse" data-target="#pink">
+              <div class="statistic pink">
+                <div class="statistic-info">
+                  <h2>26</h2>
+                  <p>اشعار</p>
+                </div>
+                <h5 class="statistic-title">
+                  <img src="images/icons/requests.svg" alt="" class="mr-2"> 
+                  اشعاراتي
+                </h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-6 form-group">
+            <a href="#green" data-toggle="collapse" data-target="#green">
+             <div class="statistic green">
+              <div class="statistic-info">
+                <h2>26</h2>
+                <p>طلب</p>
+              </div>
+              <h5 class="statistic-title">
+                <img src="images/icons/requests.svg" alt="" class="mr-2"> 
+                طلباتي
+              </h5>
+            </div>
+          </a>
+        </div>
+
+        <div id="orange" class="collapse statistic-details">
+          <h5 class="statistic-title">
+            <img src="images/icons/services.svg" alt=""> خدماتي
+            <a href="javascript:;" class="float-right">المزيد من الخدمات </a>
+          </h5>
+          <ul class="list-group">
+            <li class="list-group-item"><strong>Cras justo odio</strong>
+              <div class="date">9:13 ص - 20 جمادى الأولى</div>
+            </li>
+            <li class="list-group-item"><strong>Cras justo odio</strong>
+              <div class="date">9:13 ص - 20 جمادى الأولى</div>
+            </li>
+            <li class="list-group-item"><strong>Cras justo odio</strong>
+              <div class="date">9:13 ص - 20 جمادى الأولى</div>
+            </li>
+            <li class="list-group-item"><strong>Cras justo odio</strong>
+              <div class="date">9:13 ص - 20 جمادى الأولى</div>
+            </li>
+          </ul>
+        </div>
+
+
+        <div id="blue" class="collapse statistic-details">
+          <h5 class="statistic-title">
+            <img src="images/icons/services.svg" alt=""> مهامي
+            <a href="javascript:;" class="float-right">المزيد من الخدمات </a>
+          </h5>
+          <ul class="list-group">
+            <li class="list-group-item"><strong>Cras justo odio</strong>
+              <div class="date">9:13 ص - 20 جمادى الأولى</div>
+            </li>
+            <li class="list-group-item"><strong>Cras justo odio</strong>
+              <div class="date">9:13 ص - 20 جمادى الأولى</div>
+            </li>
+            <li class="list-group-item"><strong>Cras justo odio</strong>
+              <div class="date">9:13 ص - 20 جمادى الأولى</div>
+            </li>
+            <li class="list-group-item"><strong>Cras justo odio</strong>
+              <div class="date">9:13 ص - 20 جمادى الأولى</div>
+            </li>
+          </ul>
+        </div>
+
+
+        <div id="pink" class="collapse statistic-details">
+          <h5 class="statistic-title">
+            <img src="images/icons/services.svg" alt=""> اشعاراتي
+            <a href="javascript:;" class="float-right">المزيد من الخدمات </a>
+          </h5>
+          <ul class="list-group">
+            <li class="list-group-item"><strong>Cras justo odio</strong>
+              <div class="date">9:13 ص - 20 جمادى الأولى</div>
+            </li>
+            <li class="list-group-item"><strong>Cras justo odio</strong>
+              <div class="date">9:13 ص - 20 جمادى الأولى</div>
+            </li>
+            <li class="list-group-item"><strong>Cras justo odio</strong>
+              <div class="date">9:13 ص - 20 جمادى الأولى</div>
+            </li>
+            <li class="list-group-item"><strong>Cras justo odio</strong>
+              <div class="date">9:13 ص - 20 جمادى الأولى</div>
+            </li>
+          </ul>
+        </div>
+
+        <div id="green" class="collapse statistic-details">
+          <h5 class="statistic-title">
+            <img src="images/icons/services.svg" alt="">  طلباتي
+            <a href="javascript:;" class="float-right">المزيد من الخدمات </a>
+          </h5>
+          <ul class="list-group">
+            <li class="list-group-item"><strong>Cras justo odio</strong>
+              <div class="date">9:13 ص - 20 جمادى الأولى</div>
+            </li>
+            <li class="list-group-item"><strong>Cras justo odio</strong>
+              <div class="date">9:13 ص - 20 جمادى الأولى</div>
+            </li>
+            <li class="list-group-item"><strong>Cras justo odio</strong>
+              <div class="date">9:13 ص - 20 جمادى الأولى</div>
+            </li>
+            <li class="list-group-item"><strong>Cras justo odio</strong>
+              <div class="date">9:13 ص - 20 جمادى الأولى</div>
+            </li>
+          </ul>
+        </div>
+
+
+
+
+          <!-- <div class="col-md-4 col-6 form-group">
+            <div class="statistic orange">
+              <div class="statistic-info">
+                <h2>26</h2>
+                <p>خدمة</p>
+              </div>
+              <h5 class="statistic-title">
+                <img src="images/icons/services.svg" alt="" class="mr-2"> 
+                خدماتي
+              </h5>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-6 form-group">
+            <div class="statistic blue">
+              <div class="statistic-info">
+                <h2>26</h2>
+                <p>مهمة جديدة</p>
+              </div>
+              <h5 class="statistic-title">
+                <img src="images/icons/tasks.svg" alt="" class="mr-2">
+                مهامي
+              </h5>
+            </div>
+          </div>
+
+          <div class="d-md-none col-6 form-group">
+            <div class="statistic pink">
+              <div class="statistic-info">
+                <h2>26</h2>
+                <p>طلب</p>
+              </div>
+              <h5 class="statistic-title">
+                <img src="images/icons/requests.svg" alt="" class="mr-2"> 
+                طلباتي
+              </h5>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-6 form-group">
+            <div class="statistic green">
+              <div class="statistic-info">
+                <h2>26</h2>
+                <p>طلب</p>
+              </div>
+              <h5 class="statistic-title">
+                <img src="images/icons/requests.svg" alt="" class="mr-2"> 
+                طلباتي
+              </h5>
+            </div>
+          </div>
+
+          <div class="statistic-details orange">
+            <h5 class="statistic-title">
+              <img src="images/icons/services.svg" alt=""> خدماتي
+              <a href="javascript:;" class="float-right">المزيد من الخدمات </a>
+            </h5>
+            <ul class="list-group">
+              <li class="list-group-item"><strong>Cras justo odio</strong>
+                <div class="date">9:13 ص - 20 جمادى الأولى</div>
+              </li>
+              <li class="list-group-item"><strong>Cras justo odio</strong>
+                <div class="date">9:13 ص - 20 جمادى الأولى</div>
+              </li>
+              <li class="list-group-item"><strong>Cras justo odio</strong>
+                <div class="date">9:13 ص - 20 جمادى الأولى</div>
+              </li>
+              <li class="list-group-item"><strong>Cras justo odio</strong>
+                <div class="date">9:13 ص - 20 جمادى الأولى</div>
+              </li>
+            </ul>
+          </div>
+
+        -->
+
+      </div>
+      <div class="mt-auto section">
+        <div class="title">إعلانات الأمانة</div>
+        <div class="carousel amana-ads" data-slick='{"slidesToShow": 1, "slidesToScroll": 1,"arrows":false,"dots":true,"rtl":true}'>
+          <div>
+            <img src="images/dummy/1.jpg" alt="">
+            <div class="ads-info">
+              <div class="ads-date">15 مارس - 23:31</div>
+              <h5 class="">مشروع الملك عبدالعزيز للنقل العام ”القطارات ، الحافلات” بمدينة الرياض</h5>
+            </div>
+          </div>
+          <div>
+            <img src="images/dummy/2.jpg" alt="">
+            <div class="ads-info">
+              <div class="ads-date">15 مارس - 23:31</div>
+              <h5 class="">مشروع الملك عبدالعزيز للنقل العام ”القطارات ، الحافلات” بمدينة الرياض</h5>
+            </div>
+          </div>
+          <div>
+            <img src="images/dummy/3.jpg" alt="  ">
+            <div class="ads-info">
+              <div class="ads-date">15 مارس - 23:31</div>
+              <h5 class="">مشروع الملك عبدالعزيز للنقل العام ”القطارات ، الحافلات” بمدينة الرياض</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12 col-lg-4 section">
+      <div class="user-panel">
+        <div class="user-info text-center">
+          <div class="user-img"><img class="rounded-circle" src="images/profile-big.jpg" alt=""></div>
+          <h5 class="user-name">منصور عبدالقادر المرابط</h5>
+          <div class="user-title">مصمم صفحات ويب</div>
+
+          <a data-toggle="collapse" class="collapsed" data-target="#moreInfo" href="#moreInfo">
+            <div class="more-info"></div>
+          </a>
+
+          <div id="moreInfo" class="collapse moreInfo">
+            <div class="more-info-content text-center">
+              <label for="" class="mb-4">
+                إدارة :الدعم الفني
+              </label>
+              <div class="form-group mb-4">
+                <label for="">رقم الهاتف</label>
+                <p>0215425215</p>
+              </div>
+              <div class="form-group mb-4">
+                <label for="">رقم الجوال</label>
+                <p>0542659898</p>
+              </div>
+              <div class="form-group moreInfo-last">
+                <label for="">البريد الإلكتروني</label>
+                <p>mail@amanah.gov.sa</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="carousel user-carousel" data-slick='{"slidesToShow": 1, "slidesToScroll": 1,"arrows":false,"dots":true,"rtl":true}'>
+          <div id="myTasks">
+            <h5>مهامي </h5>
+            <ul class="tasks">
+              <li class="task status-done">دورة ادارة البوابة الإلكترونية
+                <span>14 شوال 1435هـ</span></li>
+                <li class="task status-delayed">دورة ادارة البوابة الإلكترونية
+                  <span>14 شوال 1435هـ</span></li>
+                  <li class="task status-inProgress">دورة ادارة البوابة الإلكترونية
+                    <span>14 شوال 1435هـ</span> </li>
+                  </ul>
+                  <div class="text-center mb-3">
+                    <a href="javascript:;" class="btn btn-lg  btn-primary">مركز المهام الموحد</a>
+                  </div>
+                </div>
+                <div id="myTasks">
+                  <h5>مهامي </h5>
+                  <ul class="tasks">
+                    <li class="task status-done">دورة ادارة البوابة الإلكترونية
+                      <span>14 شوال 1435هـ</span></li>
+                      <li class="task status-delayed">دورة ادارة البوابة الإلكترونية
+                        <span>14 شوال 1435هـ</span></li>
+                        <li class="task status-inProgress">دورة ادارة البوابة الإلكترونية
+                          <span>14 شوال 1435هـ</span> </li>
+                        </ul>
+                        <div class="text-center mb-3">
+                          <a href="javascript:;" class="btn btn-lg  btn-primary">مركز المهام الموحد</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                <div class="d-md-flex services  d-none d-sm-none section">
+                  <div class="service col">
+                    <div class="service-icon">
+                      <img class="svg" src="images/icons/3ahd.svg" alt="">
+                    </div>
+                    <h5>خدمات </h5>
+                    <h4><strong>العهد</strong></h4>
+                    <span>عدد الخدمات المتاحة <strong>08</strong></span>
+                    <a class="more" href="javascript:;">
+                      <img src="images/icons/service-more.svg" class="svg" alt="">
+                    </a>
+                  </div>
+                  <div class="service col">
+                    <div class="service-icon">
+                      <img class="svg" src="images/icons/hr.svg" alt="">
+                    </div>
+                    <h5>خدمات </h5>
+                    <h4><strong>شؤون الموظفين</strong></h4>
+                    <span>عدد الخدمات المتاحة <strong>08</strong></span>
+                    <a class="more" href="javascript:;">
+                      <img src="images/icons/service-more.svg" class="svg" alt="">
+                    </a>
+                  </div>
+                  <div class="service col">
+                    <div class="service-icon">
+                      <img class="svg" src="images/icons/support.svg" alt="">
+                    </div>
+                    <h5>خدمات</h5>
+                    <h4><strong>الدعم الفني</strong></h4>
+                    <span>عدد الخدمات المتاحة <strong>08</strong></span>
+                    <a class="more" href="javascript:;">
+                      <img src="images/icons/service-more.svg" class="svg" alt="">
+                    </a>
+                  </div>
+                  <div class="service col">
+                    <div class="service-icon">
+                      <img class="svg" src="images/icons/enquiry.svg" alt="">
+                    </div>
+                    <h5>خدمات</h5>
+                    <h4><strong>الإستعلام</strong></h4>
+                    <span>عدد الخدمات المتاحة <strong>08</strong></span>
+                    <a class="more" href="javascript:;">
+                      <img src="images/icons/service-more.svg" class="svg" alt="">
+                    </a>
+                  </div>
+                </div>
+
+                <div class="gallery-tabs">
+                  <div class="d-flex">
+                    <ul class="nav nav-tabs mr-auto" id="myTab" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="imageGallery-tab" data-toggle="tab" href="#imageGallery" role="tab" aria-controls="imageGallery"
+                        aria-selected="true"> مكتبة الصور</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="videoGallery-tab" data-toggle="tab" href="#videoGallery" role="tab" aria-controls="videoGallery"
+                        aria-selected="false">مكتبة الفيديوهات</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="news-tab" data-toggle="tab" href="#news" role="tab" aria-controls="news" aria-selected="false">الأخبار</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="journal-tab" data-toggle="tab" href="#journal" role="tab" aria-controls="journal" aria-selected="false">الملف الصحفي</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="userFile-tab" data-toggle="tab" href="#userFile" role="tab" aria-controls="userFile" aria-selected="false">دليل المستخدم</a>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="imageGallery" role="tabpanel" aria-labelledby="imageGallery-tab">
+                      <div class="text-right mb-4">
+                        <a href="javascript:;" class="more-gallery"></a>
+                      </div>
+                      <ul class="carousel" data-slick='{"slidesToShow": 3, "slidesToScroll": 3,"rtl":true}'>
+                        <li class="mx-3"><img src="images/dummy/gallery1.jpg" alt=""></li>
+                        <li class="mx-3"><img src="images/dummy/gallery2.jpg" alt=""></li>
+                        <li class="mx-3"><img src="images/dummy/gallery3.jpg" alt=""></li>
+                        <li class="mx-3"><img src="images/dummy/gallery1.jpg" alt=""></li>
+                      </ul>
+                    </div>
+                    <div class="tab-pane" id="videoGallery" role="tabpanel" aria-labelledby="videoGallery-tab">...</div>
+                    <div class="tab-pane" id="news" role="tabpanel" aria-labelledby="news-tab">...</div>
+                    <div class="tab-pane" id="journal" role="tabpanel" aria-labelledby="journal-tab">...</div>
+                    <div class="tab-pane" id="userFile" role="tabpanel" aria-labelledby="userFile-tab">...</div>
+                  </div>
+                </div>
+
+
+                <div class=" d-sm-none d-none d-md-block carousel apps-carousel apps" data-slick='{"slidesToShow": 3, "slidesToScroll": 1,"arrows":false,"dots":true,"rtl":true}'>
+                  <a href="javascript:;" class="d-flex align-items-center amana-aps">
+                    <img src="images/icons/amama-apps.svg" alt="">
+                    <span class="apps-text">تطبيقات الأمانة</span>
+                  </a>
+                  <a href="javascript:;" class="d-flex align-items-center employee-guid">
+                   <img src="images/icons/empoyee-guid.svg" alt="">
+                   <span class="apps-text">دليل الموظفين</span>
+                 </a>
+                 <a href="javascript:;" class="d-flex align-items-center tech-support">
+                  <img src="images/icons/tech-support.svg" alt="">
+                  <span class="apps-text">الدعم الفني</span>
+                </a>
+                <a href="javascript:;" class="d-flex align-items-center employee-guid">
+                  <img src="images/icons/empoyee-guid.svg" alt="">
+                  <span class="apps-text">دليل الموظفين</span>
+                </a>
+              </div>
+
+
+
+              <div class="row ">
+                <div class="col-md-8 amana-ads-voting">
+
+                  <div class="carousel amana-ads  amana-news" data-slick='{"slidesToShow": 1, "slidesToScroll": 1,"arrows":false,"dots":true,"rtl":true}'>
+                    <div class="">
+                      <img src="images/dummy/1.jpg" alt="">
+                      <div class="news-title">أخبار التدريب</div>
+                      <div class="ads-info">
+                        <h5 class="">مشروع الملك عبدالعزيز للنقل العام ”القطارات ، الحافلات” بمدينة الرياض</h5>
+                        <div class="ads-date">15 مارس - 23:31</div>
+                      </div>
+                    </div>
+                    <div>
+                      <img src="images/dummy/2.jpg" alt="">
+                      <div class="news-title">أخبار التدريب</div>
+                      <div class="ads-info">
+                        <h5 class="">مشروع الملك عبدالعزيز للنقل العام ”القطارات ، الحافلات” بمدينة الرياض</h5>
+                        <div class="ads-date">15 مارس - 23:31</div>
+                      </div>
+                    </div>
+                    <div>
+                      <img src="images/dummy/3.jpg" alt="  ">
+                      <div class="news-title">أخبار التدريب</div>
+                      <div class="ads-info">
+                        <h5 class="">مشروع الملك عبدالعزيز للنقل العام ”القطارات ، الحافلات” بمدينة الرياض</h5>
+                        <div class="ads-date">15 مارس - 23:31</div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                </div>
+                <div class="col-md-4 amana-ads-voting">
+                  <div class="votes">
+                    <div class="votes-header">التصويت</div>
+                    <div class="votes-body votes-waiting">
+                      <div class="votes-q">ما هو تقييمك لخدمة الإجازة الإلكترونية؟</div>
+                      <div class="votes-a">
+                        <div class="form-check">
+                          <label class="custom-control custom-radio">
+                            <input id="radio1" name="radio" type="radio" class="custom-control-input" checked>
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">جيد</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <label class="custom-control custom-radio">
+                            <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">جيد</span>
+                          </label>
+                        </div>
+                        <div class="form-check ">
+                          <label class="custom-control custom-radio">
+                            <input id="radio3" name="radio" type="radio" class="custom-control-input">
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">مقبول</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <label class="custom-control custom-radio">
+                            <input id="radio4" name="radio" type="radio" class="custom-control-input">
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">لا اعلم</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="votes-actions">
+                        <a href="javascript:;">تصويت</a> <a href="javascript:;">النتائج</a> <a href="javascript:;">اخر التصويتات</a>
+                      </div>
+                    </div>
+                    <div class="votes-body votes-done" style="display: none;">
+                      <button class="btn btn-outline-light votes-back">رجوع</button>
+                      <div class="votes-q">ما هو تقييمك لخدمة الإجازة الإلكترونية؟</div>
+                      <div>
+                        ممتاز
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                          style="width: 20%">
+                        </div>
+                      </div>
+                      ممتاز
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                        style="width: 40%">
+                      </div>
+                    </div>
+                    ممتاز
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                      style="width: 25%">
+                    </div>
+                  </div>
+                  ممتاز
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 10%">
+                  </div>
+                </div>
+              </div>
+              <p class="text-center">مجموع التصويتات 1411</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="fixed-bootom-contorl">
+    <div id="container-floating">
+
+      <div class="nd4 nds" data-toggle="tooltip" data-placement="left" data-original-title="خدماتي"><img class="svg" src="images/icons/services-fixed.svg" alt=""></div>
+
+      <div class="nd3 nds" data-toggle="tooltip" data-placement="left" data-original-title="مهامي"><img src="images/icons/tasks-fixed.svg" alt="" class="svg"></div>
+      <div class="nd1 nds" data-toggle="tooltip" data-placement="left" data-original-title="طلباتي">
+        <img src="images/icons/requests-fixed.svg" alt="" class="svg">
+      </div>
+
+      <div id="floating-button">
+        <p class="plus"><img src="images/icons/fab.svg" alt=""></p>
+        <img class="edit" src="images/icons/fab-open.svg">
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer text-center">
+    <div class="footer-content container">
+      <div class="footer-logo mb-3">
+        <img src="images/footer-logo.png" alt="">
+      </div>
+      <div class="footer-links mb-3"> 
+        <a href="javascript:;">اتصل بنا</a> 
+        <a href="javascript:;">سياسة الاستخدام</a> 
+        <a href="javascript:;">سياسة الخصوصية</a>
+      </div>
+      <div class="footer-copyrights">
+        جميع الحقوق محفوظة © أمانة منطقة الرياض 2018 
+      </div>
+    </div>
+  </footer>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function (b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l; b[l] || (b[l] =
+        function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
+      e = o.createElement(i); r = o.getElementsByTagName(i)[0];
+      e.src = 'https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X'); ga('send', 'pageview');
+  </script>
+
+  <script src="scripts/jquery.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/modernizr.js"></script>
+  <script src="scripts/slick.js"></script>
+
+  <!-- build:js scripts/plugins.js -->
+  <script src="/bower_components/bootstrap/js/dist/util.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/button.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/modal.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/tab.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
+  <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+
+</body>
+
+</html>

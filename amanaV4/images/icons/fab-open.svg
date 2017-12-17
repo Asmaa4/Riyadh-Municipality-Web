@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="12" viewBox="0 0 19 12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f4f4f4;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="fab-open.svg" class="cls-1" d="M69.5,665l-1.212-1.177L60,655.732,62.422,653l7.077,6.906L76.576,653,79,655.732l-8.289,8.093L69.5,665h0Z" transform="translate(-60 -653)"/>
+</svg>

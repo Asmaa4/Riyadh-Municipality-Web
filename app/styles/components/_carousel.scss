@@ -1,0 +1,34 @@
+/*****
+ carousel
+****/
+.carousel{
+  padding: 0;
+  margin-bottom: 0px;
+
+  .slick-dots{
+    button:before{
+      font-size: 16px;
+      color: #e3e3e3;
+      opacity: 1;
+    }
+    
+    .slick-active button:before{
+      color: #0ca3ec;
+    }
+  }
+
+  img{
+    width: 100%;
+  }
+
+  &.amana-ads{
+    position: relative;
+    margin-bottom: 0;
+    .slick-dots{
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      width: auto;
+    }
+  }
+}

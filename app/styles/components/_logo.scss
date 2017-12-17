@@ -1,0 +1,11 @@
+/***
+ logo
+****/
+.defualt .logo{
+	margin-top: 10px;
+
+    @media screen and (max-width: 500px) {
+      width: 90px;
+      overflow: hidden;
+    }
+  }

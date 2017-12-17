@@ -1,0 +1,114 @@
+/****
+ header
+****/
+.header{
+  background: url(../images/header-bg.png);
+  background-size: 100% 100%;
+  min-height: 450px;
+
+  &-inner{
+    background: url(../images/header-inner.png);
+    background-size: 100% 100%;
+    min-height: 100px;
+  }
+}
+.header , .header-inner{
+  .main-menu{
+    padding: 20px 5px;
+
+    a{
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      min-width: 220px;
+      color: #767676;
+      border-bottom: 1px solid #e4e4e4;
+      padding: 9px 15px;
+
+      &:last-child{
+        border-bottom: 0;
+      }
+      .badge{
+        margin-left: auto;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        padding: 5px 0;
+      }
+      .svg{
+        width: 28px;
+        margin-right: 8px;
+      }
+
+      &.orange{
+
+        .badge{
+          background-image: -moz-linear-gradient( 39deg, rgb(255,154,64) 0%, rgb(238,98,52) 100%);
+          background-image: -webkit-linear-gradient( 39deg, rgb(255,154,64) 0%, rgb(238,98,52) 100%);
+          background-image: -ms-linear-gradient( 39deg, rgb(255,154,64) 0%, rgb(238,98,52) 100%);
+          background-image: linear-gradient( 39deg, rgb(255,154,64) 0%, rgb(238,98,52) 100%);
+        }
+        .svg path{fill:#ee6234}
+      }
+
+      &.blue{
+        .badge{
+          background-image: -moz-linear-gradient( 39deg, rgb(36,206,255) 0%, rgb(2,144,227) 100%);
+          background-image: -webkit-linear-gradient( 39deg, rgb(36,206,255) 0%, rgb(2,144,227) 100%);
+          background-image: -ms-linear-gradient( 39deg, rgb(36,206,255) 0%, rgb(2,144,227) 100%);
+          background-image: linear-gradient( 39deg, rgb(36,206,255) 0%, rgb(2,144,227) 100%);
+
+        }
+        .svg path{
+          fill:rgb(2,144,227);
+        }
+      }
+
+      &.red{
+        .badge{
+          background-image: -moz-linear-gradient( 39deg, rgb(255,39,85) 0%, rgb(255,45,45) 100%);
+          background-image: -webkit-linear-gradient( 39deg, rgb(255,39,85) 0%, rgb(255,45,45) 100%);
+          background-image: -ms-linear-gradient( 39deg, rgb(255,39,85) 0%, rgb(255,45,45) 100%);
+          background-image: linear-gradient( 39deg, rgb(255,39,85) 0%, rgb(255,45,45) 100%);
+
+        }
+        .svg path{
+          fill:rgb(255,45,45);
+        }
+      }
+
+      &.green{
+        .badge{
+          background-image: -moz-linear-gradient( 39deg, rgb(62,238,95) 0%, rgb(0,187,84) 100%);
+          background-image: -webkit-linear-gradient( 39deg, rgb(62,238,95) 0%, rgb(0,187,84) 100%);
+          background-image: -ms-linear-gradient( 39deg, rgb(62,238,95) 0%, rgb(0,187,84) 100%);
+          background-image: linear-gradient( 39deg, rgb(62,238,95) 0%, rgb(0,187,84) 100%);
+        }
+        .svg path{
+          fill:rgb(0,187,84);
+        }
+      }
+    }
+  }
+
+  &-notification  {
+    position: relative;
+    &-badge{
+      background-color: #ff2c36;
+      border-radius: 50%;
+      padding: 4px 8px;
+      position: absolute;
+      bottom: 14px;
+      left: 11px;
+    }
+  }
+
+  .date-time{
+    &-number{
+      font-size: 18px;
+    }
+    &-text{
+      font-size: 15px;
+    }
+  }
+}

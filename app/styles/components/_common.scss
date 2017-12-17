@@ -1,0 +1,21 @@
+/****
+ common
+****/
+// // bower:scss
+// @import "bower_components/bootstrap/scss/bootstrap.scss";
+// @import "bower_components/slick-carousel/slick/slick.scss";
+// // endbower
+@font-face {
+    font-family: 'dinnRegular';
+    src: url('../fonts/subset-DINNextLTArabic-Regular.eot');
+    src: url('../fonts/subset-DINNextLTArabic-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/subset-DINNextLTArabic-Regular.woff') format('woff'), url('../fonts/subset-DINNextLTArabic-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dinnMedium';
+    src: url('../fonts/subset-DINNextLTArabic-Medium.eot');
+    src: url('../fonts/subset-DINNextLTArabic-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/subset-DINNextLTArabic-Medium.woff') format('woff'), url('../fonts/subset-DINNextLTArabic-Medium.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}

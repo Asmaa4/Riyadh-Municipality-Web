@@ -1,0 +1,55 @@
+/****
+ btn
+***/
+.btn{
+  border-radius: 2px 20px 2px 20px;
+  box-shadow: 3px 4px 15.98px 1.02px rgba(0, 0, 0, 0.12);
+
+  &:hover{
+    color: inherit;
+  }
+  
+  &-primary{
+    background-image: -moz-linear-gradient( 39deg, rgb(24,179,224) 0%, rgb(2,144,227) 100%);
+    background-image: -webkit-linear-gradient( 39deg, rgb(24,179,224) 0%, rgb(2,144,227) 100%);
+    background-image: -ms-linear-gradient( 39deg, rgb(24,179,224) 0%, rgb(2,144,227) 100%);
+    background-image: linear-gradient( 39deg, rgb(24,179,224) 0%, rgb(2,144,227) 100%);
+    border:0;
+  }
+  
+  &-orange{
+    background-image: -moz-linear-gradient( 39deg, rgb(239,126,61) 0%, rgb(238,98,52) 100%);
+    background-image: -webkit-linear-gradient( 39deg, rgb(239,126,61) 0%, rgb(238,98,52) 100%);
+    background-image: -ms-linear-gradient( 39deg, rgb(239,126,61) 0%, rgb(238,98,52) 100%);
+    background-image: linear-gradient( 39deg, rgb(239,126,61) 0%, rgb(238,98,52) 100%);
+    color: #fff;
+  }
+  &-secondary{
+      border-radius: 30px;
+      background: #ff4163; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(-90deg, #ff4163, #ff613c); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(-90deg, #ff4163, #ff613c); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(-90deg, #ff4163, #ff613c); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(-90deg, #ff4163, #ff613c); /* Standard syntax */
+        width: 250px;
+        color: #fff;
+        padding-top: 12px;
+        padding-bottom: 14px;
+
+        &:hover{
+          color:#fff;
+        }
+
+        &:active{
+          background-color: transparent;
+          background-image: none;
+          border-color: transparent;
+          background: #ff4163; /* For browsers that do not support gradients */
+          background: -webkit-linear-gradient(-90deg, #ff4163, #ff613c); /* For Safari 5.1 to 6.0 */
+          background: -o-linear-gradient(-90deg, #ff4163, #ff613c); /* For Opera 11.1 to 12.0 */
+          background: -moz-linear-gradient(-90deg, #ff4163, #ff613c); /* For Firefox 3.6 to 15 */
+          background: linear-gradient(-90deg, #ff4163, #ff613c); /* Standard syntax */
+        }
+    
+  }
+}

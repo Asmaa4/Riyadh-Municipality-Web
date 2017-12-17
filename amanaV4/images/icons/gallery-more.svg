@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27.5" height="27.5" viewBox="0 0 27.5 27.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="gallery-more.svg" class="cls-1" d="M93.25,1346.19a13.75,13.75,0,1,1-13.75,13.75A13.746,13.746,0,0,1,93.25,1346.19Zm6.163,15.16H90.858l3.954,3.79H92.017l-4.942-4.74,4.942-4.74h2.795l-3.954,3.79h8.556v1.9Z" transform="translate(-79.5 -1346.19)"/>
+</svg>

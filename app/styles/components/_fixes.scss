@@ -1,0 +1,11 @@
+/****
+ fixes
+****/
+.dropdown-menu{
+	float: right;
+	right: 0;
+	left: auto;
+	border-radius:  0 20px;
+	overflow: hidden;
+	z-index: 9999;
+}

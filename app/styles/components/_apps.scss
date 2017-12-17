@@ -1,0 +1,55 @@
+/****
+ apps
+***/
+.apps-carousel{
+
+  margin-left: -1rem !important;
+  margin-right: -1rem !important;
+  margin-top: 40px !important;
+
+    .slick-list{
+      padding-bottom: 9px;
+    }
+
+    img{
+      width: 90px;
+      margin-right: 20px;
+    }
+
+    a{
+      background-color:#fff;
+      box-shadow: -0.776px 2.898px 11px 0px rgba(0, 0, 0, 0.13);
+      margin-left: 1rem !important;
+      margin-right: 1rem !important;
+      background-repeat: no-repeat;
+      background-position: -20px 41px;
+      padding: 10px;
+
+      &.amana-aps{
+        background-image: url(../images/icons/amana-apps-bg.svg);
+      }
+      &.employee-guid{
+        background-image: url(../images/icons/empoyee-guid-bg.svg);
+      }
+      &.tech-support{
+        background-image: url(../images/icons/tech-support-bg.svg);
+      }
+    }
+
+  }
+
+  @media screen and (max-width: 769px) { 
+    .apps{
+      &-text{
+        font-size: 20px;
+      }
+    }
+  }
+
+   @media screen and (min-width: 769px) { 
+    .apps{
+      &-text{
+        font-size: 25px;
+      }
+    }
+  }

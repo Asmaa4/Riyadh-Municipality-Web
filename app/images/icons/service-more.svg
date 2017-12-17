@@ -1,0 +1,18 @@
+<svg id="service-more.svg" xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43">
+  <defs>
+    <style>
+      .cls-unique1 {
+        fill: none;
+        stroke: #d7d7d7;
+        stroke-width: 2px;
+      }
+
+      .cls-unique2 {
+        fill: #c7c7c7;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_9_copy_2" data-name="Ellipse 9 copy 2" class="cls-unique1" cx="21.5" cy="21.5" r="20.5"/>
+  <path class="cls-unique2" d="M1036,1216h2v10h-2v-10Zm-4,4h10v2h-10v-2Z" transform="translate(-1015 -1199)"/>
+</svg>

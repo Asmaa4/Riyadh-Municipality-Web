@@ -1,0 +1,15 @@
+/*****
+ captions
+****/
+.caption{
+	display: table;
+
+	&-media , &-text{
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	&-media--top{
+		vertical-align: top;
+	}
+}

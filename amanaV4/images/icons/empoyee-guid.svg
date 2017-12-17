@@ -1,0 +1,36 @@
+<svg id="empoyee-guid.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="99" height="99" viewBox="0 0 99 99">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+        filter: url(#filter-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="13.306" x2="78.694" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2ddaff"/>
+      <stop offset="1" stop-color="#0085bb"/>
+    </linearGradient>
+    <filter id="filter" x="0" y="0" width="99" height="99" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="2.723" dy="4.193" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2.236"/>
+      <feFlood result="flood" flood-opacity="0.12"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="774" y="1938" width="64" height="71" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="-0.776" dy="2.898" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="3.317"/>
+      <feFlood result="flood" flood-opacity="0.13"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <circle id="Ellipse_679_copy_4" data-name="Ellipse 679 copy 4" class="cls-1" cx="46" cy="45" r="45"/>
+  <path class="cls-2" d="M822.033,1945.45a5.736,5.736,0,0,1,5.785,5.7v37.7a5.736,5.736,0,0,1-5.785,5.7h-30.7a5.736,5.736,0,0,1-5.785-5.7v-37.7a5.736,5.736,0,0,1,5.785-5.7h30.7Zm-5.339,2.63H791.33a3.074,3.074,0,0,0-3.115,3.07v37.7a3.074,3.074,0,0,0,3.115,3.07h25.364v-43.84Zm-13.795,6.58a5.7,5.7,0,1,1-5.784,5.7A5.73,5.73,0,0,1,802.9,1954.66Zm0,2.63a3.07,3.07,0,1,0,3.115,3.07A3.073,3.073,0,0,0,802.9,1957.29Zm4.45,12.71a1.315,1.315,0,1,1,0,2.63h-8.9a1.315,1.315,0,1,1,0-2.63h8.9Zm0,4.38a1.315,1.315,0,1,1,0,2.63h-8.9a1.315,1.315,0,1,1,0-2.63h8.9Z" transform="translate(-761 -1925)"/>
+</svg>

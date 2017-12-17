@@ -1,0 +1,11 @@
+/****
+ ie-fixes
+****/
+.no-flexboxlegacy{
+  .header .main-menu a{
+    display: block;
+  }
+  .amana-ads{
+    height: auto;
+  }
+}
